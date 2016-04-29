@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/ingredientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Растительное масло"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:typeface="serif"
+        android:textColor="@android:color/secondary_text_light"
+        android:autoText="false"
+        android:minLines="1"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="4dp"
+        android:maxLines="5"
+        android:includeFontPadding="false"
+        android:keepScreenOn="false"
+        android:filterTouchesWhenObscured="false"
+        android:layout_alignParentRight="false"
+        android:verticalScrollbarPosition="right"
+        android:textIsSelectable="true"
+        android:phoneNumber="false"
+        android:maxWidth="200dp" />
+
+    <TextView
+        android:id="@+id/ingredientCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="50"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:typeface="serif"
+        android:layout_alignBottom="@+id/ingredientName"
+        android:layout_toRightOf="@+id/ingredientName"
+        android:layout_toEndOf="@+id/ingredientName"
+        android:layout_marginRight="4dp" />
+
+    <TextView
+        android:id="@+id/ingredientMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="мл."
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:typeface="serif"
+        android:layout_alignTop="@+id/ingredientCount"
+        android:layout_toRightOf="@+id/ingredientCount"
+        android:layout_toEndOf="@+id/ingredientCount" />
+
+</RelativeLayout>

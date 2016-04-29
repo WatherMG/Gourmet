@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Гурман</string>
+    <string name="action_search">Поиск…</string>
+    <string name="action_settings">Настройки</string>
+    <string name="desc_list_item_icon">Иконка</string>
+    <string name="drawer_close">SliderMenu закрыто</string>
+    <string name="drawer_open">SliderMenu закрыто</string>
+    <string name="navigation_category">Категории</string>
+    <string name="action_add">Добавить</string>
+    <string name="action_change">Изменить</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_sort">Сортировка</string>
+    <string name="action_sort_by_calories">Сортировать по калориям</string>
+    <string name="action_sort_by_category">Сортировать по категориям</string>
+    <string name="action_sort_by_hi_rate">Сортировать по рейтингу</string>
+    <string name="navigation_about">О приложении</string>
+    <string name="navigation_demo">Демонстрация</string>
+    <string name="navigation_home">Главная</string>
+    <string name="navigation_my_recipes">Мои рецепты</string>
+    <string name="navigation_rated_recipes">Мои оценки</string>
+    <string name="navigation_tools">Инструменты</string>
+    <string name="navigation_top_recipes">Лучшие рецепты</string>
+    <string name="tool_calories">Энергетическая ценность</string>
+    <string name="tool_products">Подбор рецепта</string>
+    <string name="navigation_header">ПЕРСОНАЛЬНОЕ</string>
+    <string name="navigation_category_bird">Птица</string>
+    <string name="navigation_category_meat">Мясо</string>
+    <string name="navigation_category_potable">Напитки</string>
+    <string name="navigation_category_seafood">Морепродукты</string>
+    <string name="navigation_category_sweet_stuff">Сладкое</string>
+    <string name="navigation_category_vegan">Растительная пища</string>
+    <string name="recipe_calories">Калорий</string>
+    <string name="recipe_carbohydrates">Углеводы</string>
+    <string name="recipe_fats">Жиры</string>
+    <string name="recipe_protein">Белок</string>
+    <string name="search_hint">Поиск…</string>
+</resources>

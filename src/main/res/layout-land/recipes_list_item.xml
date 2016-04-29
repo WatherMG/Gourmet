@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recipes_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/container_dropshadow"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/recipes_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/category_image_desc"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/meat"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/counter_background"
+        android:layout_alignWithParentIfMissing="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recipes_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+
+            android:text="@string/navigation_category_potable"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:typeface="serif" />
+
+
+        <TextView
+            android:id="@+id/recipes_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recipes_title"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:text="Мясо"
+            android:textAlignment="center"
+            android:textColor="@android:color/secondary_text_dark_nodisable"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/recipes_rating"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:isIndicator="true"
+        android:rating="4.4"
+        android:stepSize="0.1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/counter_background"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/recipes_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="4dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/counter_background"
+            android:text="60 минут"
+            android:textAlignment="center"
+            android:textColor="@android:color/secondary_text_dark_nodisable"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/recipes_calories_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:background="@drawable/counter_background"
+            android:text="2400 кал."
+            android:textAlignment="center"
+            android:textColor="@android:color/secondary_text_dark_nodisable"
+            android:layout_below="@+id/recipes_time"
+            android:layout_alignRight="@+id/recipes_time"
+            android:layout_alignEnd="@+id/recipes_time"
+            android:typeface="serif"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/recipes_short_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/recipes_time"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="48dp"
+            android:layout_toLeftOf="@+id/recipes_time"
+            android:text="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+            android:textAlignment="inherit"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:layout_marginBottom="4dp"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+</RelativeLayout>

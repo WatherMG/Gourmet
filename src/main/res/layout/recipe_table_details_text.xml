@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@android:drawable/divider_horizontal_bright"
+    android:baselineAligned="false"
+    android:divider="@android:drawable/divider_horizontal_textfield"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/detailsStepNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="1."
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/detailsStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Вот наши ингредиенты. Я брала попкорн для микроволновой печи (сливочный). Он нежный, вкусный и быстро готовится. У нас тяжело достать нормальные зерна попкорна. Кто-то скажет, что он вреден, кто-то скажет что можно купить карамельный попкорн ( уверяю вас, ничего общего во вкусах нет). Но это личное дело каждого, выбор продуктов. Вы можете купить обычный и приготовить его привычным для Вас способом.&quot;"
+        android:typeface="serif"
+        android:autoText="false"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:freezesText="false"
+        android:hapticFeedbackEnabled="false"
+        android:includeFontPadding="false"
+        android:singleLine="false"
+        android:textAllCaps="false"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:textIsSelectable="true" />
+
+</LinearLayout>
+
+
+

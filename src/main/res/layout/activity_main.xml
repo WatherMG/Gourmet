@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Framelayout to display Fragments -->
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer_container"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/drawer_profile"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="96dp"
+            android:background="@color/list_background_header"
+            android:gravity="start">
+
+            <com.braincraftapps.gourmet.CircleShape
+                android:id="@+id/avatar"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/desc_list_item_icon"
+
+                android:src="@drawable/avatar"
+                android:adjustViewBounds="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/avatar"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Алексей Сысоев"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small.Inverse"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/email_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/user_name"
+                    android:text="Dr.Wather@gmail.com"
+                    android:textSize="12sp"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small.Inverse"
+                    android:typeface="serif"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:drawable/divider_horizontal_dim_dark" />
+
+        </RelativeLayout>
+
+
+        <!-- Listview to display slider menu -->
+
+        <ListView
+            android:id="@+id/drawer_list"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+
+            android:background="@color/list_background"
+            android:choiceMode="singleChoice"
+            android:divider="@color/list_divider"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/list_selector" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+
+
